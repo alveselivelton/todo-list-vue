@@ -15,7 +15,7 @@ export const useTodoStore = defineStore(
     });
 
     const addTodo = (todo) => {
-      todos.value.push(todo);
+      todos.value.unshift(todo);
     };
 
     const removeTodo = (id) => {
